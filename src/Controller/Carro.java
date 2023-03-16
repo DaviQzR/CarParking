@@ -48,14 +48,14 @@ public class Carro extends Thread
 			  {
 				e.printStackTrace();
 			  }
-			System.out.println("#" + idcarro+ " ja andou " + DistanciaPercorrida+ " m.");
+			System.out.println("#Carro " +idcarro+ " ja andou " + DistanciaPercorrida+ " m.");
 		}
 		posChegada++;
-		System.out.println("# "+idcarro +"Foi o " + posChegada + "° a chegar ");
+		System.out.println("#Carro "+idcarro +" Foi o " + posChegada + "° a chegar ");
 	}
 	private void CarroEstacionando()
 	{
-		System.out.println("#" + idcarro + " Estacionou");
+		System.out.println("#Carro " +idcarro + " Estacionou");
 		int tempo = (int)((Math.random()*2001)+1000);
 		try
 		{
@@ -68,7 +68,7 @@ public class Carro extends Thread
 	private void CarroSaindo()
 	{
 		posSaida++;
-		System.out.println("#" + idcarro + "Foi o " + posSaida +"°. a sair");
+		System.out.println("#Carro " +idcarro + "Foi o " + posSaida +"°. a sair");
 	}
 }
 	
